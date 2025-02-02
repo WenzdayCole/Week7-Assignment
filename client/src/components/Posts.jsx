@@ -6,7 +6,8 @@ export default function Posts() {
     useEffect(() => {
         async function fetchData() {
             const response = await fetch(
-                "http://localhost:8080/posts"
+                // "http://localhost:8080/posts" this one worked locally
+                "https://week7-assignment-server-lujl.onrender.com"
             );
             const data = await response.json();
             setPosts(data);
